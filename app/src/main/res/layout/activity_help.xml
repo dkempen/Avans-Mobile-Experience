@@ -6,4 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".HelpActivity">
 
+    <TextView
+        android:id="@+id/helpTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/helpTitleTextView"
+        android:textAppearance="@style/titleStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/helpQuestionMarkImageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/helpUpperImageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpTitleTextView"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/helpInfoTextView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/helpInfoTextView"
+        android:textAppearance="@style/textStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpUpperImageView" />
+
+    <ImageView
+        android:id="@+id/helpLowerImageView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpInfoTextView"
+        app:srcCompat="@color/colorText" />
 </android.support.constraint.ConstraintLayout>
