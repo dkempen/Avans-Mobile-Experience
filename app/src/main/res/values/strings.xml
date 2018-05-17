@@ -1,6 +1,27 @@
 <resources>
     <string name="app_name">Mobile-Experience</string>
     <string name="startWelcomeTextView">Welkom bij de Essteling</string>
+    <string name="startSummaryTextView"> Beleef een avontuur!\n \n
+        Om een missie te starten,\n
+        houd je telefoon tegen \n
+        een missie paal in het park.
+    </string>
     <string name="helpTitleTextView">Hoe werkt het?</string>
     <string name="helpInfoTextView">Tekst</string>
+
+    <string name="middleGebeurtenisTitelTextView">Gebeurtenis titel</string>
+    <string name="middleGebeurtenisInfoTextView">Gebeurtenis info</string>
+    <string name="middleOpdrachtTitelTextView">Opdracht titel</string>
+    <string name="middleOpdrachtInfoTextView">Opdracht info</string>
+
+    <string name="startHoofdmissieTitelTextView">Hoofdmissie titel</string>
+    <string name="startHoofdmissieInfoTextView">Hoofdmissie info</string>
+    <string name="startOpdrachtTitelTextView">Opdracht titel</string>
+    <string name="startOpdrachtInfoTextView">Opdracht info</string>
+
+    <string name="endQuestGebeurtenisTitelTextView">Gebeurtenis titel</string>
+    <string name="endQuestGebeurtenisInfoTextView">Gebeurtenis info</string>
+    <string name="endQuestGameTitelTextView">Game Titel</string>
+    <string name="endQuestGameInfoTextView">Game info</string>
+    <string name="endQuestGameButton"> speel spel</string>
 </resources>
