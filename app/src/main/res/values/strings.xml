@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mobile-Experience</string>
+    <string name="startWelcomeTextView">Welkom bij de Essteling</string>
 </resources>
