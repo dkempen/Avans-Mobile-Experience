@@ -12,7 +12,7 @@ import java.util.TimerTask;
 public class Game {
     /**
      * Test main for the sequence.
-     * @param args not important.e
+     * @param args not important
      */
     public static void main(String[] args) {
         Game game = new Game();
@@ -37,10 +37,13 @@ public class Game {
      */
     private int sequenceIndex = 0;
 
+    private ArrayList<Integer> sequenceFromUser = new ArrayList<>();
+
     /**
      * The timer attribute regulates the time a light is played.
      */
     private Timer timer;
+
 
     /**
      * The game constructor creates the first sequence and initialize the timer attribute.
@@ -54,7 +57,7 @@ public class Game {
      * The start method starts a timer that will play the lights on the light display.
      */
     public void start() {
-        timer.scheduleAtFixedRate(getSequenceTask(),5000,5000);
+        timer.scheduleAtFixedRate(getSequenceTask(),1500,1500);
     }
 
     /**
@@ -80,6 +83,40 @@ public class Game {
             System.out.println(sequence.get(sequenceIndex));
             sequenceIndex++;
         }
+    }
+
+    public void onFullyUserInput() {
+        new Thread(() ->{
+           while (true){
+                if(sequence.size() == sequenceFromUser.size()) {
+                    if(isCorrect())
+                        System.out.println("Correct");
+                    else
+                        System.out.println("Incorrect");
+                    break;
+                }
+           }
+        });
+    }
+
+    private boolean isCorrect() {
+        boolean isCorrect = true;
+        for(int sequenceNumber : sequence){
+            for(int sequenceUserNumber : sequenceFromUser){
+                if(sequenceNumber != sequenceUserNumber){
+                    isCorrect = false;
+                    break;
+                }
+            }
+        }
+        sequence.clear();
+        sequenceFromUser.clear();
+        return isCorrect;
+    }
+
+    public void addSequenceInputFromUser(int sequenceNumber) {
+        System.out.println("Sequencenumner: " + sequenceNumber);
+        sequenceFromUser.add(sequenceNumber);
     }
 
     /**
