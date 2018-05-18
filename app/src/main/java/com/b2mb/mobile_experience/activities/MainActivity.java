@@ -1,12 +1,11 @@
-package com.b2mb.mobile_experience;
+package com.b2mb.mobile_experience.activities;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+
+import com.b2mb.mobile_experience.R;
 
 public class MainActivity extends AppCompatActivity {
 

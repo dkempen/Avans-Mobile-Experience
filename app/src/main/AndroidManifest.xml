@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".QuestStartActivity" />
-        <activity android:name=".QuestMiddleActivity" />
-        <activity android:name=".QuestEndActivity" />
-        <activity android:name=".GameActivity" />
-        <activity android:name=".EndActivity"></activity>
+        <activity android:name=".activities.HelpActivity" />
+        <activity android:name=".activities.QuestStartActivity" />
+        <activity android:name=".activities.QuestMiddleActivity" />
+        <activity android:name=".activities.QuestEndActivity" />
+        <activity android:name=".activities.GameActivity" />
+        <activity android:name=".activities.EndActivity"></activity>
     </application>
 
 </manifest>
